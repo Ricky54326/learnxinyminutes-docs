@@ -248,46 +248,46 @@ int main(void) {
   //   int a = 1 << 32; // UB if int is 32 bits wide
 
   ///////////////////////////////////////
-  // Control Structures
+  // les structures de contrôle
   ///////////////////////////////////////
 
   if (0) {
-    printf("I am never run\n");
+    printf("Je ne cours jamais\n");
   } else if (0) {
-    printf("I am also never run\n");
+    printf("Je ne cours jamais aussi\n");
   } else {
-    printf("I print\n");
+    printf("Je cours\n");
   }
 
-  // While loops exist
+  // "While" (tandis que) circuits exister
   int ii = 0;
-  while (ii < 10) { //ANY value not zero is true.
-    printf("%d, ", ii++); // ii++ increments ii AFTER using its current value.
-  } // => prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "
+  while (ii < 10) { //toutes valeur non nulle 
+    printf("%d, ", ii++); // ii++ incrément ii *après* l'utilisation de sa valeur courante
+  } // => imprime "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "
 
   printf("\n");
 
   int kk = 0;
   do {
     printf("%d, ", kk);
-  } while (++kk < 10); // ++kk increments kk BEFORE using its current value.
-  // => prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "
+  } while (++kk < 10); // ++kk incrément kk *avant* l'utilisation de sa valeur courante
+  // => imprime "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "
 
   printf("\n");
 
-  // For loops too
+  // For (pendant) circuits exister aussi
   int jj;
   for (jj=0; jj < 10; jj++) {
     printf("%d, ", jj);
-  } // => prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "
+  } // => imprime "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "
 
   printf("\n");
 
   // *****NOTES*****:
-  // Loops and Functions MUST have a body. If no body is needed:
+  // circuits et fonctions doit avoir un corps. Si aucun corps est nécessaire... TODO Is this actually true?
   int i;
   for (i = 0; i <= 5; i++) {
-    ; // use semicolon to act as the body (null statement)
+    ; // Utiliser un point virgule à agir comme le corps 
   }
 
   // branching with multiple choices: switch()
