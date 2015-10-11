@@ -7,6 +7,7 @@ contributors:
     - ["Jakub Trzebiatowski", "http://cbs.stgn.pl"]
     - ["Marco Scannadinari", "https://marcoms.github.io"]
     - ["Leo Rudberg", "https://github.com/lozord"]
+    - ["Riccardo Mutschlechner", "https://github.com/ricky54326"]
 lang: fr-fr
 ---
 
