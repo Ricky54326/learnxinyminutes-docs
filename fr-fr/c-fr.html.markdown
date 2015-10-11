@@ -68,7 +68,7 @@ int main(void) {
   short x_short = 0;
 
   // chars sont garantis être un octet
-  char x_char = 0; 
+  char x_char = 0;
   char y_char = 'y'; // designez un char littéral avec les apostrophes
 
   // longs are often 4 to 8 bytes; long longs are guaranteed to be at least
